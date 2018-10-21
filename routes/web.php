@@ -15,5 +15,6 @@ Route::get('/', 'PaperController@index')->name('index');
 Route::get('/about', 'PaperController@about')->name('about');
 Route::get('/contact', 'PaperController@contact')->name('contact');
 Route::post('/contact', 'PaperController@store')->name('contact.store');
+Route::get('/thanks/{name}', 'PaperController@thanks')->name('thanks');
 
 
